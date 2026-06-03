@@ -30,7 +30,7 @@ def load_courses() -> List[dict]:
         if not DATA_FILE.exists():
             return []
 
-        with open(DATA_FILE, "r", encoding="utf-8") as file:
+        with open(DATA_FILE, "r", encoding="utf-8-sig") as file:
             data = json.load(file)
 
         if not isinstance(data, list):
