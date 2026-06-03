@@ -1,0 +1,11 @@
+﻿services:
+  fastapi:
+
+    build: .
+
+    container_name: course-api
+
+    restart: always
+
+    ports:
+      - "80:8000"
